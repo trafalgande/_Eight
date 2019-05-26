@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<BorderPane fx:id="currentPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartController">
+   <center>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="engBtn" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#engButtonPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/en_unpressed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="estBtn" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#estonButtonPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/est_unpressed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rusBtn" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#rusButtonPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/ru_unpressed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ukrBtn" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#ukrButtonPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/ukr_unpressed.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <top>
+      <TextFlow textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%startHeader" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+   </top>
+</BorderPane>

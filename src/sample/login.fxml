@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="currentLoginPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="user" layoutX="50.0" layoutY="47.0" prefWidth="200.0" promptText="%loginUser" />
+      <PasswordField fx:id="pass" layoutX="50.0" layoutY="85.0" prefWidth="200.0" promptText="%loginPass" />
+      <Button fx:id="loginButton" defaultButton="true" layoutX="126.0" layoutY="120.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="32.0" prefWidth="124.0" text="%loginBtn" />
+      <TextFlow layoutX="-8.0" layoutY="164.0" prefHeight="22.0" prefWidth="316.0" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%loginFooter">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="hl" onAction="#hyperLinkAction" text="%loginHyperLink">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="-7.0" layoutY="6.0" prefHeight="34.0" prefWidth="316.0" textAlignment="CENTER">
+         <children>
+            <Text fill="#2f2f2f" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="0.0" text="%loginHeader" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <Button fx:id="cancerButton" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" onAction="#cancerButtonAction" prefHeight="32.0" prefWidth="65.0" text="%loginCancer" />
+   </children>
+</AnchorPane>
